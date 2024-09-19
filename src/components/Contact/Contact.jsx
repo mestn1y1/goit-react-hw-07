@@ -1,5 +1,6 @@
 import css from "./Contact.module.css";
 import { AiOutlineUser } from "react-icons/ai";
+import { MdDelete } from "react-icons/md";
 import { FiPhone } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 import { deleteContact } from "../../redux/contatctsOps";
@@ -22,7 +23,7 @@ export default function Contact({ contact }) {
         </div>
       </div>
       <button className={css.button} onClick={handleDelete}>
-        Delete
+        <MdDelete />
       </button>
     </li>
   );
