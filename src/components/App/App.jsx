@@ -43,7 +43,7 @@ export default function App() {
           wrapperClass="loader"
         />
       )}
-      <ToastContainer />
+      <ToastContainer autoClose={2000} />
       <ContactList />
     </div>
   );
